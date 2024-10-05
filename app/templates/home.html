@@ -17,37 +17,65 @@
   </head>
 
   <body class="bg-black">
-    <nav
-      class="px-9 py-5 h-24 flex space-x-6 bg-black border-b border-black opacity-[0.80] rounded-b-lg sticky top-0 z-50"
-    >
-      <div class="px-10 pt-8 space-x-6 flex absolute top-0 right-0">
-        <div class="px-9 space-x-6 item-center">
-          <a href="/" class="text-lg text-white font-semibold">Home</a>
-          <a
-            href="static/docs/CV_OmMudgal.pdf"
-            target="_blank"
-            class="text-lg text-white font-semibold"
-            >CV</a
-          >
-          <a
-            href="https://github.com/ommudgal"
-            target="_blank"
-            class="text-lg text-white font-semibold"
-            >Github</a
-          >
-          <a href="#contact" class="text-lg text-white font-semibold"
-            >Contact</a
-          >
-        </div>
+    <nav class="px-9 py-5 h-24 flex items-center justify-between bg-black border-b border-black opacity-80 rounded-b-lg sticky top-0 right-0 z-50">
+      <div class="text-white text-lg font-semibold">Om Mudgal</div>
+      <div class="md:hidden flex flex-col space-y-1 cursor-pointer hamburger-menu">
+        <div class="w-6 h-0.5 bg-white"></div>
+        <div class="w-6 h-0.5 bg-white"></div>
+        <div class="w-6 h-0.5 bg-white"></div>
+      </div>
+      <div class="hidden md:flex space-x-6 nav-links">
+        <a href="#" class="text-lg text-white font-semibold">Home</a>
+        <a href="static/docs/CV_OmMudgal.pdf" target="_blank" class="text-lg text-white font-semibold">CV</a>
+        <a href="https://github.com/ommudgal" target="_blank" class="text-lg text-white font-semibold">Github</a>
+        <a href="#contact" class="text-lg text-white font-semibold">Contact</a>
       </div>
     </nav>
+
+    <div class="fixed top-0 right-0 w-64 h-full bg-black text-white transform translate-x-full transition-transform duration-300 side-window z-10 pt-24">
+      <div class="p-5 space-y-6">
+        <a href="#" class="block text-lg font-semibold">Home</a>
+        <a href="static/docs/CV_OmMudgal.pdf" target="_blank" class="block text-lg font-semibold">CV</a>
+        <a href="https://github.com/ommudgal" target="_blank" class="block text-lg font-semibold">Github</a>
+        <a href="#contact" class="block text-lg font-semibold">Contact</a>
+      </div>
+    </div>
+  
+    <script>
+      document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        document.querySelector('.side-window').classList.toggle('translate-x-full');
+      });
+    </script>
+
+
     <div class="my-56 px-11 h-72">
       <center>
         <h1 class="text-white text-[48px]">Om Mudgal</h1>
         <h3 class="text-white">Learn. Create. Improve.</h3>
       </center>
     </div>
-    <div class="bg-slate-400 px-8 py-9 gap-x-4">
+
+    <div class="bg-slate-400 px-8 py-9">
+      <h1 class="text-red-600 font-serif text-[48px] text-center">About Me</h1>
+        
+        <div class="bg-slate-200 rounded-lg p-8 coulum-1 gap-x-4">
+          <p class="ur">
+            Hello, I'm Om Mudgal A passionate designer and programmer with a
+            flair for blending creativity and technology. My work focuses on
+            creating intuitive designs and efficient code that bring ideas to
+            life. From crafting sleek user interfaces to building powerful
+            software solutions, I strive to deliver experiences that are both
+            beautiful and functional. Take a look at my portfolio to explore my
+            projects, and feel free to get in touch if you'd like to
+            collaborate!
+          </p>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="h-48"></div>
+    <div class="bg-slate-400 px-8 pt-8 py-8 gap-x-4">
       <h1 class="text-red-600 font-serif text-center text-3xl">Blender</h1>
       <div class="pt-8">
         <div class="bg-slate-200 rounded-lg p-8">
@@ -61,7 +89,7 @@
         </div>
       </div>
       <div>
-        <div class="flex gap-x-4 pt-8">
+        <div class="flex gap-x-4 pt-8 pb-8">
           <div>
             <video class="w-full" autoplay loop muted>
               <source src="static/video/room.mp4" type="video/mp4" />
@@ -80,18 +108,19 @@
     <div class="h-48"></div>
     <div>
       <div class="bg-slate-400 px-8 py-8 gap-x-4">
-        <div class="text-black text-center text-3xl">
+        <div class="text-red-600 text-center text-3xl">
           <h1>Quizzr</h1>
         </div>
-        <div class="pt-20 pb-8 w-auto">
-          <h1 class="text-center">
+        <div class="pt-10 pb-8 w-auto">
+          <h1 class="text-center bg-slate-200 rounded-lg p-8">
             Quizzr is a prototype Quizzing platform that is created using Python
             tkinter for frontend and Mysql server for data-storage
-            <br /><br />
+            <br />
+            <br />
             Its Base Code is available on
             <u
               ><a href="https://github.com/ommudgal/Quizzr" target="_blank">
-                Github
+                <b>Github</b>
               </a></u
             >
           </h1>

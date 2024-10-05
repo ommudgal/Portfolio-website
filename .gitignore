@@ -1,2 +1,6 @@
 .venv
 app/static/
+app/templates/static/   
+app/__pycache__/
+app/__pycache__/__init__.cpython-311.pyc
+app/__pycache__/views.cpython-311.pyc
